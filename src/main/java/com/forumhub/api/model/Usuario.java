@@ -35,7 +35,7 @@ public class Usuario implements UserDetails {
     public String getUsername() {
         return email;
     }
-    // Métodos de UserDetails (isAccountNonExpired, etc.) retornando true
+
     @Override public boolean isAccountNonExpired() { return true; }
     @Override public boolean isAccountNonLocked() { return true; }
     @Override public boolean isCredentialsNonExpired() { return true; }
